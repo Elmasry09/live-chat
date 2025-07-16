@@ -3,9 +3,12 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx,vue}",
+    "./node_modules/daisyui/**/*.js"  // DaisyUI
   ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 }
